@@ -131,7 +131,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AsciiCodes.h" />
     <ClInclude Include="check_prime.h" />
     <ClInclude Include="decrypt.h" />
     <ClInclude Include="KeyStore.h" />
