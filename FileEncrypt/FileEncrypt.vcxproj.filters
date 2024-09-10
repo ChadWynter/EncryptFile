@@ -32,5 +32,8 @@
     <ClInclude Include="check_prime.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="AsciiCodes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
