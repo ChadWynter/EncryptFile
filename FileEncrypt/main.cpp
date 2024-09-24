@@ -36,18 +36,21 @@ int main(int argc, char* argv[]) {
 #else
 int main(int argc, char* argv[])
 {
+	TestAscii();
+
+}
+void TestAscii() {
 	//getCodes test
 	string line = "Testing";
-	vector<vector<int>> convert;
+	vector<vector<int>> A_Codes;
 
-	get_codes(line, &convert);
+	get_codes(line, &A_Codes);
 
-	for (int i = 0; i < convert.size() - 1; i++) {
-		for (int j = 0; j < convert[i].size() - 1; j++) {
-			cout << convert[i][j] << ", ";
+	for (const auto& i : A_Codes) {
+		for (const auto& j : i) {
+			cout << j << ", ";
 		}
 	}
-
 }
 
 #endif
