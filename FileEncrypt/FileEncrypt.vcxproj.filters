@@ -35,5 +35,8 @@
     <ClInclude Include="AsciiCodes.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Get_GCD.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include "AsciiCodes.h"
+#include "check_prime.h"
 
 
 using namespace std;
@@ -17,20 +18,24 @@ int main(int argc, char* argv[]) {
 
 	ifstream myfile;
 	myfile.open(file);
-	int line_number = 0;
 	while (getline(myfile, line)) {
 		//convert each char into ascii representation and store in A_Codes
 		get_codes(line, &A_Codes);
-
-		line_number++;
 	}
 
 	
 	//check if public key p and q valid
+	int p, q, n, e;
 
 
 	//generate private key
+	choose_primes(&p, &q);
 
+	//store n
+	n = p * q;
+
+	//Calculate f(n) = (p-1)(q-1)
+	int func = (p - 1) * (q - 1);
 
 }
 #else

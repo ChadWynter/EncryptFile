@@ -184,6 +184,7 @@
     <ClInclude Include="AsciiCodes.h" />
     <ClInclude Include="check_prime.h" />
     <ClInclude Include="decrypt.h" />
+    <ClInclude Include="Get_GCD.h" />
     <ClInclude Include="KeyStore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
