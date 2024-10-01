@@ -31,11 +31,15 @@ int main(int argc, char* argv[]) {
 	//generate private key
 	choose_primes(&p, &q);
 
-	//store n
+	//calculate n
 	n = p * q;
 
 	//Calculate f(n) = (p-1)(q-1)
 	int func = (p - 1) * (q - 1);
+
+	//choose "e" s.t. gcd(f(n),e) = 2; 1 < e < f(n)
+
+	//store n, d, e
 
 }
 #else
