@@ -62,4 +62,8 @@ void TestAscii() {
 	}
 }
 
+void TestEGen() {
+	//testing if GCD of F(n) and e is 1
+}
+
 #endif

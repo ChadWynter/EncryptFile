@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\Get_GCD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|solutionrelative:Get_GCD.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\AsciiCodes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|solutionrelative:AsciiCodes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9AADD864-9360-4191-B71D-BB135D84DA32}|FileEncrypt.vcxproj|C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\encrypt.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Get_GCD.h",
               "DocumentMoniker": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\Get_GCD.h",
               "RelativeDocumentMoniker": "Get_GCD.h",
               "ToolTip": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\Get_GCD.h",
               "RelativeToolTip": "Get_GCD.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-25T22:22:40.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AsciiCodes.h",
               "DocumentMoniker": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\AsciiCodes.h",
               "RelativeDocumentMoniker": "AsciiCodes.h",
@@ -63,12 +63,11 @@
               "RelativeToolTip": "AsciiCodes.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-09T22:26:44.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:26:44.68Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "check_prime.h",
               "DocumentMoniker": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\check_prime.h",
               "RelativeDocumentMoniker": "check_prime.h",
@@ -76,12 +75,11 @@
               "RelativeToolTip": "check_prime.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-09T21:19:07.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T21:19:07.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "KeyStore.h",
               "DocumentMoniker": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\KeyStore.h",
               "RelativeDocumentMoniker": "KeyStore.h",
@@ -89,18 +87,17 @@
               "RelativeToolTip": "KeyStore.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-09T20:59:28.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T20:59:28.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\wynte\\Documents\\Programs\\FileEncrypt\\FileEncrypt\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAFAAAA",
+              "ViewState": "AQIAACUAAABAMzMzMzMrwEEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-09T20:34:43.936Z",
               "EditorCaption": ""
