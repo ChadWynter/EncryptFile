@@ -5,6 +5,7 @@
 #include <vector>
 #include "AsciiCodes.h"
 #include "check_prime.h"
+#include "Get_GCD.h"
 
 
 using namespace std;
@@ -43,9 +44,11 @@ int main(int argc, char* argv[]) {
 
 }
 #else
+void TestEGen();
 int main(int argc, char* argv[])
 {
-	TestAscii();
+	//TestAscii();
+	TestEGen();
 
 }
 void TestAscii() {
@@ -64,6 +67,27 @@ void TestAscii() {
 
 void TestEGen() {
 	//testing if GCD of F(n) and e is 1
+
+	//check if public key p and q valid
+	int p, q, n, e;
+
+
+	//generate private key
+	choose_primes(&p, &q);
+
+	//calculate n
+	n = p * q;
+
+	//Calculate f(n) = (p-1)(q-1)
+	int func = (p - 1) * (q - 1);
+
+	find_e(func, &e);
+
+	cout << "p: " << p << endl;
+	cout << "q: " << q << endl;
+	cout << "f(n): " << func << endl;
+	cout << "e " << e << endl;
+
 }
 
 #endif
