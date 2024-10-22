@@ -6,6 +6,8 @@
 #include "AsciiCodes.h"
 #include "check_prime.h"
 #include "Get_GCD.h"
+#include <time.h>
+#include <map>
 
 
 using namespace std;
@@ -47,6 +49,7 @@ int main(int argc, char* argv[]) {
 void TestEGen();
 int main(int argc, char* argv[])
 {
+	srand(time(NULL));
 	//TestAscii();
 	TestEGen();
 
@@ -87,7 +90,26 @@ void TestEGen() {
 	cout << "q: " << q << endl;
 	cout << "f(n): " << func << endl;
 	cout << "e " << e << endl;
+	cout << "GCD of F(n) and e: " << GetGCD(func, e) << endl;
 
+}
+
+int GetGCD(int fn, int e) {
+	int GCD = 1;
+	unordered_map<int, int> occurances;
+	for (int i = 1; i < fn / 2; i++) {
+		if (fn % i == 0) {
+			occurances[i]++;
+		}
+	}
+	for (int j = 1; j < e / 2; j++) {
+		//if map key != 0, GCD != 1
+		auto search = occurances.find(j);
+		if (search != occurances.end()) {
+			GCD = j;
+		}
+	}
+	return GCD;
 }
 
 #endif
