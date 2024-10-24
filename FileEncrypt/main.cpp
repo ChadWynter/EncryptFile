@@ -8,11 +8,15 @@
 #include "Get_GCD.h"
 #include <time.h>
 #include <map>
+#include "Convert_Password.h"
 
 
 using namespace std;
 #ifdef _DEBUG
 int main(int argc, char* argv[]) {
+	string password;
+	//retreive password from user
+	cin >> password;
 	//convert file to ascii codes
 	string line;
 	string file;
@@ -28,7 +32,7 @@ int main(int argc, char* argv[]) {
 
 	
 	//check if public key p and q valid
-	int p, q, n, e;
+	int p, q, n, e, d;
 
 
 	//generate private key
@@ -41,17 +45,30 @@ int main(int argc, char* argv[]) {
 	int func = (p - 1) * (q - 1);
 
 	//choose "e" s.t. gcd(f(n),e) = 2; 1 < e < f(n)
+	e = find_e(func, &e);
 
-	//store n, d, e
+	//store n, d, e (encrypt by multiplying each number by user password converted to ascii and added together)
+	int password_conversion = Convert_PW(password);
+
+	ofstream out("metadata.txt");
+	out << n * password_conversion << endl;
+	out << d * password_conversion << endl;
+	out << e * password_conversion << endl;
+	out.close();
+
+
 
 }
 #else
 void TestEGen();
+int GetGCD(int fn, int e);
+int TestConvertPassword();
 int main(int argc, char* argv[])
 {
 	srand(time(NULL));
 	//TestAscii();
-	TestEGen();
+	//TestEGen();
+	TestConvertPassword();
 
 }
 void TestAscii() {
@@ -104,12 +121,24 @@ int GetGCD(int fn, int e) {
 	}
 	for (int j = 1; j < e / 2; j++) {
 		//if map key != 0, GCD != 1
-		auto search = occurances.find(j);
-		if (search != occurances.end()) {
-			GCD = j;
+		if (e % j == 0) {
+			auto search = occurances.find(j);
+			if (search != occurances.end()) {
+				//cout << "common number found, j = " << j << endl;
+				GCD = j;
+			}
 		}
 	}
 	return GCD;
+}
+
+int TestConvertPassword() {
+	string password;
+	cout << "enter password: "  ;
+	cin >> password;
+
+	cout<<"value converted: "<<Convert_PW(password);
+
 }
 
 #endif
